@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PBI_BKP_Lite", "PBI_BKP_Lite\PBI_BKP_Lite.csproj", "{F32918F6-389B-4CCC-A50E-0150FB9CB960}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F32918F6-389B-4CCC-A50E-0150FB9CB960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32918F6-389B-4CCC-A50E-0150FB9CB960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32918F6-389B-4CCC-A50E-0150FB9CB960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32918F6-389B-4CCC-A50E-0150FB9CB960}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB608684-5941-4B32-9CFF-82BE13F665A0}
+	EndGlobalSection
+EndGlobal
