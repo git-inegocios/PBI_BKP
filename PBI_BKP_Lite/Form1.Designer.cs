@@ -29,30 +29,25 @@ namespace PBI_BKP_Lite
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPBIBKP));
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.lblPathDestino = new System.Windows.Forms.Label();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnSalir = new FontAwesome.Sharp.IconButton();
+            this.lblPathDestino = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
-            // lblPathDestino
-            // 
-            this.lblPathDestino.AutoSize = true;
-            this.lblPathDestino.Location = new System.Drawing.Point(33, 43);
-            this.lblPathDestino.Name = "lblPathDestino";
-            this.lblPathDestino.Size = new System.Drawing.Size(0, 17);
-            this.lblPathDestino.TabIndex = 0;
-            // 
             // iconButton1
             // 
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileExport;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(163, 146);
+            this.iconButton1.Location = new System.Drawing.Point(148, 163);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(189, 72);
             this.iconButton1.TabIndex = 1;
@@ -66,7 +61,7 @@ namespace PBI_BKP_Lite
             this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnSalir.IconColor = System.Drawing.Color.Black;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSalir.Location = new System.Drawing.Point(491, 146);
+            this.btnSalir.Location = new System.Drawing.Point(482, 163);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(189, 72);
             this.btnSalir.TabIndex = 2;
@@ -75,20 +70,45 @@ namespace PBI_BKP_Lite
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // lblPathDestino
+            // 
+            this.lblPathDestino.AutoSize = true;
+            this.lblPathDestino.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lblPathDestino.Depth = 0;
+            this.lblPathDestino.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblPathDestino.ForeColor = System.Drawing.Color.Blue;
+            this.lblPathDestino.Location = new System.Drawing.Point(17, 96);
+            this.lblPathDestino.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblPathDestino.Name = "lblPathDestino";
+            this.lblPathDestino.Size = new System.Drawing.Size(0, 24);
+            this.lblPathDestino.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(756, 247);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(38, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmPBIBKP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 248);
+            this.ClientSize = new System.Drawing.Size(806, 296);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblPathDestino);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.lblPathDestino);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "frmPBIBKP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Power BI Backup - Lite";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,9 +116,10 @@ namespace PBI_BKP_Lite
 
         #endregion
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Label lblPathDestino;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton btnSalir;
+        private MaterialSkin.Controls.MaterialLabel lblPathDestino;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
