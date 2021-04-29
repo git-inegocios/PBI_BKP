@@ -35,6 +35,8 @@ namespace PBI_BKP_Lite
             this.btnSalir = new FontAwesome.Sharp.IconButton();
             this.lblPathDestino = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Log = new System.Windows.Forms.TextBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@ namespace PBI_BKP_Lite
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileExport;
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(148, 163);
+            this.iconButton1.Location = new System.Drawing.Point(105, 406);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(189, 72);
             this.iconButton1.TabIndex = 1;
@@ -61,7 +63,7 @@ namespace PBI_BKP_Lite
             this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnSalir.IconColor = System.Drawing.Color.Black;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSalir.Location = new System.Drawing.Point(482, 163);
+            this.btnSalir.Location = new System.Drawing.Point(485, 406);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(189, 72);
             this.btnSalir.TabIndex = 2;
@@ -86,7 +88,7 @@ namespace PBI_BKP_Lite
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(756, 247);
+            this.pictureBox1.Location = new System.Drawing.Point(756, 467);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(38, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,11 +96,37 @@ namespace PBI_BKP_Lite
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // Log
+            // 
+            this.Log.Location = new System.Drawing.Point(21, 154);
+            this.Log.Multiline = true;
+            this.Log.Name = "Log";
+            this.Log.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Log.Size = new System.Drawing.Size(763, 246);
+            this.Log.TabIndex = 6;
+            this.Log.TabStop = false;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(17, 120);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(42, 24);
+            this.materialLabel1.TabIndex = 7;
+            this.materialLabel1.Text = "Log";
+            // 
             // frmPBIBKP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 296);
+            this.ClientSize = new System.Drawing.Size(806, 516);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.Log);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPathDestino);
             this.Controls.Add(this.btnSalir);
@@ -106,7 +134,7 @@ namespace PBI_BKP_Lite
             this.MaximizeBox = false;
             this.Name = "frmPBIBKP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Power BI Backup - Lite";
+            this.Text = "Power BI Backup - Lite              iNegocios(R) 2021";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -120,6 +148,8 @@ namespace PBI_BKP_Lite
         private FontAwesome.Sharp.IconButton btnSalir;
         private MaterialSkin.Controls.MaterialLabel lblPathDestino;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox Log;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 
