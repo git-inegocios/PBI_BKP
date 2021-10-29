@@ -4,17 +4,17 @@
 
 
 
-//NECESARIO PARA EL FUNCIONAMIENTO: 
+//NECESARIO PARA EL FUNCIONAMIENTO: <br>
 
- //Abrir Windows PowerShell ISE.
- //Crear nuevo script ( Ctrl + N) 
- //Ingresar Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser
- //Ejecutar
- //Ingresar Login-PowerBi
- //Ejecutar
- //Aceptar todas las conexiones futuras
- //Esperar a que se despliegue inicio de sesión en PowerBI
- //Cerrar Windows PowerShell ISE
- 
+ //Abrir Windows PowerShell ISE. <br>
+ //Crear nuevo script ( Ctrl + N)  <br>
+ //Ingresar Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser <br>
+ //Ejecutar <br>
+ //Ingresar Login-PowerBi <br>
+ //Ejecutar <br>
+ //Aceptar todas las conexiones futuras <br>
+ //Esperar a que se despliegue inicio de sesión en PowerBI <br>
+ //Cerrar Windows PowerShell ISE <br>
+ <br>
  //Ejecutar programa
  
